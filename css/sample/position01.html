@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* div{
+            width: 100px; height: 100px;
+            background-color: red;
+            position: relative;
+            top: 100px; left: 50px;
+        } */
+        div{
+            width: 200px; height: 200px;
+            background-color: yellow;
+            position: relative;
+            border: 1px solid black;
+        }
+        .abs{
+            width: 100px; height: 100px;
+            background-color: red;
+            position: absolute; 
+            /* 
+                absolute를 사용하면 문서의 흐름에서 제외 되기에 다른 요소와 겹칠 수 있음
+                상위 요소중 position을 가진 요소가 없다면 window를 기준으로 오프셋을 잡게됨
+            */
+            top: 0px;    
+        }
+    </style>
+</head>
+<body>
+    <!-- <div></div>
+
+    <p>pppppp</p> -->
+    <div></div>
+    <div>
+        <div class="abs"></div> 
+        <p>ppppp</p>
+    </div> 
+</body>
+</html>
